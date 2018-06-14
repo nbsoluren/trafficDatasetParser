@@ -5,7 +5,7 @@ from datetime import datetime
 
 def writingToFile(point, road, direction):
     directory = './out'
-    newFile = direction + '_' + road + '_' + point
+    newFile = direction + '_' + road + '_' + point + '.csv'
     f = open(newFile,"w")
     f.write("5 Minutes,Lane 1 Flow (Veh/5 Minutes),# Lane Points,% Observed")
     for file in os.listdir(directory):
